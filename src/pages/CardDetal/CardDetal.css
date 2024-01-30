@@ -1,0 +1,163 @@
+.card-detal {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card-detal .baner {
+  width: 660px;
+  height: 143px;
+  position: absolute;
+  top: -40px;
+  background-color: var(--background-color-elements);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 24px;
+}
+.card-detal .baner .baner-logo {
+  width: 140px;
+  height: 143px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-detal .baner .baner-logo img {
+  width: 50%;
+  object-fit: cover;
+}
+.card-detal .baner-position {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.card-detal .company-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-detal .company-site .company-site-link,
+.position-article .apply-link,
+.role-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 140px;
+  height: 50px;
+  background: var(--background-color-btn-2-hover);
+  color: var(--color-text);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  margin: 16px 0;
+}
+.card-detal .company-site .company-site-link:hover,
+.position-article .apply-link:hover {
+  background-color: var(--color-light-violet);
+  color: var(--color-white);
+}
+.article {
+  width: 800px;
+  min-height: calc(100vh -150px- 150px);
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  background-color: var(--background-color-elements);
+}
+.info-article {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.info-article span {
+  font-size: 1rem;
+}
+.info-article .dot {
+  margin: 4px 10px;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: var(--color-dark-grey);
+}
+.position-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.position-article .apply-link {
+  background-color: var(--color-violet);
+}
+.location-article {
+  color: var(--color-violet);
+  margin-bottom: 16px;
+}
+.description-article {
+  color: var(--color-text);
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+.requirements-article h2,
+.role-article h2 {
+  margin-bottom: 16px;
+}
+.content-article {
+  margin-bottom: 16px;
+}
+.items-article li {
+  margin-bottom: 16px;
+}
+.role-article .items-article li {
+  list-style-type: decimal;
+}
+@media (max-width: 1051px) {
+  .card-detal .baner {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 0px;
+  }
+  .card-detal .baner-position {
+    align-items: center;
+    text-align: center;
+  }
+  .article {
+    width: 100%;
+    padding: 150px 16px 20px 16px;
+    margin-top: 160px;
+  }
+  .position-article,
+  .location-article {
+    text-align: center;
+    justify-content: center;
+  }
+  .card-detal .company-site .company-site-link,
+  .position-article .apply-link,
+  .role-link {
+    margin-left: 16px;
+  }
+  .items-article {
+    list-style: none;
+    list-style-type: none;
+  }
+  .role-article .items-article li {
+    list-style-type: none;
+  }
+}
+@media (max-width: 560px) {
+  .card-detal .company-site .company-site-link,
+  .position-article .apply-link,
+  .role-link {
+    margin-left: 0px;
+  }
+}
